@@ -88,7 +88,7 @@ class StreamManager:
 
         # Omni model
         self.target_dtype = torch.bfloat16
-        self.device='cpu:0'
+        self.device = torch.device("cpu")
         
         self.minicpmo_model_path = args.model #"openbmb/MiniCPM-o-2_6"
         self.model_version = "2.6"
